@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALLPHONE STORE</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        color: #000000;
+      }
+
+      header,
+      footer {
+        text-align: center;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        padding: 1em;
+      }
+
+      h1,
+      h2 {
+        text-align: center;
+      }
+
+      section {
+        margin: 2em auto;
+        padding: 1em;
+        max-width: 600px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+
+      ul,
+      ol {
+        margin: 1em 0;
+      }
+
+      figure {
+        text-align: center;
+        margin: 2em 0;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+      }
+
+      label {
+        margin-bottom: 0.5em;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      button {
+        padding: 0.5em;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        width: 100%;
+      }
+
+      button {
+        background-color: #333;
+        color: white;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+
+      .inline-block {
+        display: inline-block;
+      }
+
+      .card {
+        background-color: white;
+        padding: 1em;
+        max-width: 600px;
+      }
+
+      .styled-hr {
+        height: 2px;
+        background-color: #f9f9f9;
+        border: none;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+      .image-gallery {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1em;
+      }
+      .image-gallery img {
+        max-width: 30%;
+        border-radius: 5px;
+      }
+      footer a {
+        color: #ccc;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CALLPHONE STORE</h1>
+    </header>
+
+    <section>
+      <h2>Nuestra Colección</h2>
+      <p class="italic">
+        Explora nuestra amplia gama de celulares de las mejores marcas.
+      </p>
+      <div class="image-gallery">
+        <img
+          src="https://media.very.co.uk/i/very/VPZ18_SQ1_0000000004_BLACK_SLf?$300x400_retinamobilex2$&$roundel_very$&p1_img=blank_apple"
+          alt="Imagen de celulares"
+        />
+        <img
+          src="https://m.media-amazon.com/images/I/410l6QowJmL._AC_UF894,1000_QL80_.jpg"
+          alt="Imagen de celulares"
+        />
+        <img
+          src="https://resources.claroshop.com/medios-plazavip/mkt/658f108637ed3_n16p_blue_07png.jpg?scale=500&qlty=75"
+          alt="Imagen de celulares"
+        />
+      </div>
+      <ul>
+        <li>Iphone 15 pro max</li>
+        <li>Samnsung s23 ultra</li>
+        <li>Xiaomi Poco X6 pro</li>
+      </ul>
+      <ol>
+        <li>Oferta Especial</li>
+        <li>Nuevos Lanzamientos</li>
+        <li>Más Vendidos</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>Contáctanos</h2>
+      <p class="bold">
+        Para más información, contáctanos a través del formulario a
+        continuación.
+      </p>
+
+      <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <label for="Telefono">Numero de Telefono:</label>
+        <input type="tel" id="tel" name="tel" required />
+
+        <fieldset>
+          <legend>¿Qué celular te interesa?</legend>
+          <label
+            ><input type="radio" name="interes" value="Celular A" /> Iphone 15
+            pro max
+          </label>
+          <label
+            ><input type="radio" name="interes" value="Celular B" /> Samnsung
+            s23 ultra</label
+          >
+          <label
+            ><input type="radio" name="interes" value="Celular C" /> Xiaomi Poco
+            x6 pro
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Características deseadas:</legend>
+          <label
+            ><input type="checkbox" name="caracteristicas" value="4G" />
+            4G</label
+          >
+          <label
+            ><input type="checkbox" name="caracteristicas" value="5G" />
+            5G</label
+          >
+          <label
+            ><input type="checkbox" name="caracteristicas" value="Camara" />
+            Cámara de alta resolución</label
+          >
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <figure>
+      <img
+        src="https://www.cetrogar.com.ar/media/catalog/product/2/0/2023_london_row_basicpack_vivamagenta_pdpheroa.png?quality=80&bg-color=255,255,255&fit=bounds&height=&width=&canvas=:"
+        alt="Celular en promoción"
+        width="25%"
+        height="40%"
+      />
+      <figcaption>Celular en promoción</figcaption>
+    </figure>
+
+    <hr class="styled-hr" />
+
+    <footer>
+      <p>2024 Tienda de Celulares</p>
+      <a href="indexx.html" target="_blank">Visita nuestra web</a>
+    </footer>
+  </body>
+</html>

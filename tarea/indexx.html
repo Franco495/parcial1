@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CALLPHONE STORE</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+      }
+
+      header,
+      footer {
+        text-align: center;
+        background-color: #000000;
+        color: white;
+        padding: 1em;
+      }
+      h1,
+      h2 {
+        text-align: center;
+      }
+      .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .product {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+      .product-info {
+        text-align: center;
+      }
+      .product-info h3 {
+        margin: 0;
+      }
+      .product-info p {
+        margin: 5px 0;
+      }
+      .product-info .price {
+        font-weight: bold;
+      }
+      .product-info .buy-button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .product-info .buy-button:hover {
+        background-color: #45a049;
+      }
+      .imagen-galery {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .imagen-galery img {
+        width: 100%;
+        height: auto;
+      }
+      .offers-section {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      .offer {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 10px;
+        width: 300px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+      .offer img {
+        width: 100%;
+        height: auto;
+      }
+      .offer .buy-button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .offer .buy-button:hover {
+        background-color: #45a049;
+      }
+      footer {
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 10px;
+        position: relative;
+        bottom: 0;
+        width: 100%;
+      }
+      footer a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>CALLPHONE STORE</h1>
+    </header>
+    <main class="centered">
+      <section>
+        <h2>Modelos</h2>
+        <div class="product-list">
+          <div class="product">
+            <img
+              src="https://todoapplecaba.com.ar/wp-content/uploads/2022/11/image.jpeg"
+              alt="Iphone 15"
+            />
+            <div class="product-info">
+              <h3>Iphone 15 pro max</h3>
+              <p class="price">Precio: USD $1.000</p>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="https://www.lavanguardia.com/andro4all/hero/2024/01/samsung-galaxy-s24-ultra-portada.1705508441.6826.jpg?width=768&aspect_ratio=16:9&format=nowebp"
+              alt="Samsung s23 ultra"
+            />
+            <div class="product-info">
+              <h3>Samsung s23 ultra</h3>
+              <p class="price">Precio: USD $800</p>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+          <div class="product">
+            <img
+              src="https://www.lavanguardia.com/andro4all/hero/2023/11/redmi-note-13-pro-portada.jpg?width=768&aspect_ratio=16:9&format=nowebp"
+              alt="Xiaomi poco x6 pro"
+            />
+            <div class="product-info">
+              <h3>Xiaomi poco x6 pro</h3>
+              <p class="price">Precio: USD $600</p>
+              <button class="buy-button">Comprar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2>Ofertas</h2>
+        <p>Aquí encontrarás las mejores ofertas en celulares.</p>
+        <div class="offers-section">
+          <div class="offer">
+            <img
+              src="https://cdn.smart-gsm.com/blog/wp-content/uploads/2023/08/motorola-moto-g84-evleaks_gris-768x768.png"
+              alt="Motorola G84"
+            />
+            <h3>Motorola G84</h3>
+            <p class="price">Precio: USD $200</p>
+            <button class="buy-button">Comprar</button>
+          </div>
+          <div class="offer">
+            <img
+              src="https://http2.mlstatic.com/D_Q_NP_910538-MLA74676695446_022024-O.webp"
+              alt="motorola g34"
+            />
+            <h3>Motorola G34</h3>
+            <p class="price">Precio: USD $180</p>
+            <button class="buy-button">Comprar</button>
+          </div>
+          <div class="offer">
+            <img
+              src="https://motorolaes.vtexassets.com/arquivos/ids/157828-800-auto?width=800&height=auto&aspect=true"
+              alt="motorola G20"
+            />
+            <h3>Motorola G20</h3>
+            <p class="price">Precio: USD $150</p>
+            <button class="buy-button">Comprar</button>
+          </div>
+          <div class="offer">
+            <img
+              src="https://http2.mlstatic.com/D_Q_NP_961136-MLA48692098767_122021-O.webp"
+              alt="motorola g40"
+            />
+            <h3>Motorola G40</h3>
+            <p class="price">Precio: USD $120</p>
+            <button class="buy-button">Comprar</button>
+          </div>
+          <!-- Add more offers here -->
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Tienda de Celulares</p>
+      <a href="index.html">Contacto</a>
+    </footer>
+  </body>
+</html>
